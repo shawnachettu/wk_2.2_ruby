@@ -39,7 +39,7 @@ class HashesController < ApplicationController
     # save the result into a variable called @result
     address = { "correct" => "Sears", "incorrect" => "Willis"}
     ## your code starts here ##
-
+      @result = address['correct']
     ## your code ends here ##
     render "hashes"
   end
@@ -49,7 +49,7 @@ class HashesController < ApplicationController
     # add the key/value pair of "last_name" => "Tower" to the following hash
     attraction = { "first_name" => "Sears"}
     ## your code starts here ##
-
+      attraction["last_name"] = "Tower"
     ## your code ends here ##
     @result = "#{attraction['first_name']} #{attraction['last_name']}"
     render "hashes"
@@ -66,7 +66,7 @@ class HashesController < ApplicationController
                             }
                         }
     ## your code starts here ##
-
+      @result = attraction["address"]['street']
     ## your code ends here ##
     render "hashes"
   end

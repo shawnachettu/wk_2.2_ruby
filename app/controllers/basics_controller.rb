@@ -73,7 +73,7 @@ class BasicsController < ApplicationController
     # Save your results into a variable called @result.
     name = "Jane Doe"
     ## your code starts here ##
-
+      @result = name.length
     ## your code ends here ##
     render "basic"
   end
@@ -84,7 +84,7 @@ class BasicsController < ApplicationController
     # Save your results into a variable called @result.
     name = "Jane Doe"
     ## your code starts here ##
-
+      @result = name.gsub('e', '3')
     ## your code ends here ##
     render "basic"
   end
