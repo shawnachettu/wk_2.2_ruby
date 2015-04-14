@@ -33,7 +33,7 @@ class HashesController < ApplicationController
     render "hashes"
   end
 
-  def nm_5
+  def num_5
     ## problem
     # pull out the value of "correct" from the following hash
     # save the result into a variable called @result
@@ -44,7 +44,7 @@ class HashesController < ApplicationController
     render "hashes"
   end
 
-  def num_5
+  def num_6
     ## problem
     # add the key/value pair of "last_name" => "Tower" to the following hash
     attraction = { "first_name" => "Sears"}

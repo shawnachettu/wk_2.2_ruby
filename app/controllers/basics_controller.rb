@@ -80,17 +80,6 @@ class BasicsController < ApplicationController
 
   def num_10
     ## problem
-    # Write code that counts the number of characters in the name variable.
-    # Save your results into a variable called @result.
-    name = "Jane Doe"
-    ## your code starts here ##
-
-    ## your code ends here ##
-    render "basic"
-  end
-
-  def num_11
-    ## problem
     # Write code that replaces all the e's in the name variable with 3's.
     # Save your results into a variable called @result.
     name = "Jane Doe"
