@@ -20,8 +20,8 @@ Rails.application.routes.draw do
 
   get("/params/1/:name", {:controller => "params", :action => "num_1"})
   get("/params/2/:color", {:controller => "params", :action => "num_2"})
-  get("/params/3", {:controller => "params", :action => "num_3"})
-  get("/params/4", {:controller => "params", :action => "num_4"})
+  get("/params/3/:font", {:controller => "params", :action => "num_3"})
+  get("/params/4/:height/:width", {:controller => "params", :action => "num_4"})
 
 
   get("/forms/1", {:controller => "forms", :action => "num_1_display"})
@@ -30,7 +30,9 @@ Rails.application.routes.draw do
   get("/forms/3", {:controller => "forms", :action => "num_3_display"})
   get("/forms/3_process", {:controller => "forms", :action => "num_3_process"})
   get("/forms/4", {:controller => "forms", :action => "num_4_display"})
+  get("/forms/4_process", {:controller => "forms", :action => "num_4_process"})
   get("/forms/5", {:controller => "forms", :action => "num_5_display"})
+  get("/forms/5_process", { :controller => 'forms', :action => "num_5_process"})
   get("/forms/6", {:controller => "forms", :action => "num_6_display"})
   get("/forms/7", {:controller => "forms", :action => "num_7_display"})
   get("/forms/8", {:controller => "forms", :action => "num_8_display"})
