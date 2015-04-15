@@ -10,8 +10,8 @@ There are four main groups of content, each in a separate controller:
 
 Examples will be marked with comments that look like:
 
-    ## example
+    #=== Example ======================
 
 and problems will be marked with comments that look like:
 
-    ## problem
+    #=== Problem ======================
