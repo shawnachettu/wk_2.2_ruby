@@ -100,6 +100,15 @@ class FormsController < ApplicationController
     render "num_6_display"
   end
 
+  def num_6_process
+    length = params["length"].to_f
+    width = params["width"].to_f
+    height = params["height"].to_f
+
+    @result = length * width * height
+    render 'num_6_process'
+  end
+
   def num_7_display
     #=== Problem ===========================
     # Choose your own calculation
@@ -112,7 +121,15 @@ class FormsController < ApplicationController
     # a page that displays the key results of the calculation
     #=====================================
 
+
     render "num_7_display"
+  end
+
+  def num_7_process
+    a = params["a"].to_i
+    b = params["b"].to_i
+    @result = Math.sqrt(a**2 + b**2)
+    render 'num_7_process'
   end
 
   def num_8_display
